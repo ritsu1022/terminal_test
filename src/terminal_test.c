@@ -12,6 +12,11 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
+	for (int i = 40; i <= 47; i++) {
+		for (int j = 30; j <= 37; j++) {
+			printf("\033[%02d;%02dm%d%d\033[0m ", j, i, j, i);
+		}
+		printf("\n");
+	}
+
 }
